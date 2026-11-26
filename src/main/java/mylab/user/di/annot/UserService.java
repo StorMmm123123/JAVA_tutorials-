@@ -19,7 +19,7 @@ public class UserService {
     public SecurityService getSecurityService() {
         return securityService;
     }
-
+    
     public boolean registerUser(String userId, String name, String password) {
 
         if (securityService.authenticate(userId, password)) {
